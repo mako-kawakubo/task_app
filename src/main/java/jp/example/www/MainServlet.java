@@ -22,11 +22,11 @@ public class MainServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	 //String url = "jdbc:postgresql:taskapp_db";
-	 String url = "jdbc:postgresql://ec2-18-211-86-133.compute-1.amazonaws.com:5432/dbd6l2q3ajmbuc";
+	 String url = "jdbc:postgresql://ec2-3-210-29-54.compute-1.amazonaws.com:5432/d2f2mlmrsgg11q";
 	 //String user = "postgres";
-	 String user = "udhtniyiqbliqs";
+	 String user = "gqakyteoruehxc";
 	 //String pass = "postgres";
-	 String pass = "856a2a8df5d6335336ceddb52a75f4f4eeb935e15d673f49bfa52145c8cb1356";
+	 String pass = "dc1254a85aa015099c3f3ccc66761bdf0c14c4614497660fe18ee5c0c692cc77";
 	 
     /**
      * @see HttpServlet#HttpServlet()
