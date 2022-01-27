@@ -1,1 +1,1 @@
-web: java -war target/taskapp2.war
+web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
