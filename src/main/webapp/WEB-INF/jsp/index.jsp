@@ -1,3 +1,4 @@
+<%@page import="java.util.List"%>
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.HashMap"%>
@@ -28,7 +29,7 @@
         <textarea rows="5" cols="80" name="memo"></textarea>
         <br/>
         <br/>
-     <button type="submit" class="btn btn-primary">Submit</button>
+     <button type="submit" name="Submit" class="btn btn-primary">Submit</button>
       <!-- input type="submit"/> -->
     </form>
     
@@ -44,8 +45,21 @@
          //out.println("<div>" + map.get("memo") + "</div>");
          out.println("<div>" +"日付："+ map.get("modified_date") + "</div>");       
          out.println("<div>" +"内容："+ ((String) map.get("memo")).replace("\n", "<br/>") + "</div>");
-     }
- %>
+         %>
+        <td>
+		    <form action="" method="post">
+		    <input type="hidden" name="delete_id" value="<%=map.get("task_id")%>">
+		    <button type="submit" name="delete_id">削除</button>
+		    </form>
+        </td>
+    <% }%> 
+
+     
+     
+ 
+      
+     
+
 
 </body>
 </html>
